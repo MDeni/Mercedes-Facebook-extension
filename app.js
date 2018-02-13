@@ -14,17 +14,30 @@ import logger from 'morgan';
 import path from 'path';
 import SocketServer from 'socket.io';
 import {Server} from 'http';
+//var bodyParser = require('body-parser');
+//var cookieParser = require('cookie-parser');
+//var express = require('express');
+//var favicon = require('serve-favicon');
+//var logger = require('morgan');
+//var path = require('path');
+//var SocketServer = require('socket.io');
+//var {Server} = require('http');
 
 // ===== MESSENGER =============================================================
 import ThreadSetup from './messenger-api-helpers/thread-setup';
+//var ThreadSetup = require('./messenger-api-helpers/thread-setup');
 
 // ===== ROUTES ================================================================
 import index from './routes/index';
 import lists from './routes/lists';
 import webhooks from './routes/webhooks';
+//var index = require('./routes/index');
+//var lists = require('./routes/lists');
+//var webhooks = require('./routes/webhooks');
 
 // ===== SOCKETS ===============================================================
 import attachSockets from './sockets';
+//var attachSockets = require('./sockets');
 
 /* =============================================
    =                Initialize                 =
